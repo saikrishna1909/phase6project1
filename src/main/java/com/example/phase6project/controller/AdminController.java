@@ -9,6 +9,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -22,7 +23,7 @@ import com.example.phase6project.Repository.AdminRepository;
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
-	@RequestMapping("adminlogin")
+	@PostMapping("adminlogin")
 	public String welcomePage() {
 		return "adminlogin";
 	}
