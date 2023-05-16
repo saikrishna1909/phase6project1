@@ -18,11 +18,11 @@ import com.example.phase6project.Repository.AdminRepository;
 
 
 @Controller
-@RequestMapping("/api")
+
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
-	@RequestMapping("/adminlogin")
+	@RequestMapping("adminlogin")
 	public String welcomePage() {
 		return "adminlogin";
 	}
